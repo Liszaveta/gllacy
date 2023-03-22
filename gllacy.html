@@ -1,52 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gllacy Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main header">
-        <nav class="main navigation">
-            <a class="main header logo" href="gllacy.html">
-                <img src="img/svg/logo.svg" width="50" height="24" alt="Логотип сайта">
+    <header class="main-header">
+        <div class="main-navigation-wrapper">
+            <div class="header-container">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/svg/logo.svg" width="150" height="80" alt="Логотип сайта">
             </a>
-            <ul class="site navigation">
+            <ul class="site-navigation">
                 <li><a href="catalog">Каталог</a></li>
                 <li><a href="delivery and payment">Доставка и оплата</a></li>
                 <li><a href="information">О компании</a></li>
             </ul>
             <ul class="main-user-navigation">
-                <li class="search">Поиск</li>
-                <li class="login-link">Вход</li>
-                <li class="cart">Корзина</li>
+                <li class="search"> <img src="img/svg/loupe.svg" width="20" height="20" alt="Поиск"></li>
+                <li class="login-link"> <img src="img/svg/entrance.svg" width="20" height="20" alt="Вход">Вход</li>
+                <li class="cart"> <img src="img/svg/basket.svg" width="20" height="20" alt="Корзина"></li>
             </ul>
         </nav>
-        <p class="hours">С 10 до 20, ежедневно</p>
-        <p class="number">8 812 450-25-25</p>
+        <ul class="available">
+        <li class="hours">С 10 до 20, ежедневно</li>
+        <li class="number">8 812 450-25-25</li>
+            </div>
+        </div>
     </header>
+    <ul class="slides-switches">
+        <li class="slide-radio">
+            <button class="slide-btn">
+                Первый слайд
+            </button>
+        </li>
+        <li class="slide-radio">
+            <button class="slide btn">
+                Второй слайд
+            </button>
+        </li>
+        <li class="slide-radio">
+            <button class="slide btn">
+                Третий слайд
+            </button>
+        </li>
+    </ul>
     <main class="container">
    <h1> Крем-брюле и пломбир с малиновым джемом</h1>
-   <button class="both" type="button">Давайте оба!</button>
-   <section class="free rasberry">
+   <button class="botton" type="submit">Давайте оба!</button>
+   <div class="bonus"></div>
+    <section class="offers">
+        <ul class="offers-list">
+        <li class="offers_item">
     <h2>Малинка даром!</h2>
-    <ul class="info-list">
-        <li class="news-item">
             <p>При покупке 2кг фруктового мороженного,добавим в ваш заказ банку малинового варенья бесплатно.</p>
         </li>
-    </ul>
     <a class="button" href="#">Хочу варьенье!</a>
-</section>
-<section class="free chocolate">
+    </li>
+        <li class="offers_item">
     <h2>Шоколадки даром!</h2>
-    <ul class="info-list">
-        <li class="news-item">
             <p>При покупке 2кг пломбира,добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки бесплатно.</p>
+            <a class="button" href="#">Хочу шоколадки!</a>
         </li>
     </ul>
-    <a class="button" href="#">Хочу шоколадки!</a>
 </section>
+</div>
 <article class="hit">
     <ul class="variety"></ul>
         <li>Сливочное с апельсиновым джемом и циструсовой стружкой</li>
