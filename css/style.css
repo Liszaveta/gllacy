@@ -152,7 +152,7 @@ h1 {
     margin: 0;
 }
 .hit {
-    width: 100%;
+    width: 1145px;
    display: flex;
    justify-content: space-between;
    padding: 30px;
@@ -168,6 +168,7 @@ h1 {
 .img-choco {
     background: url("../img/chocolate-bg.jpg");
     margin-top: 25px;
+    margin: 25px;
     width: 560px;
     height: 230px;
     border-radius: 20px;
@@ -175,14 +176,76 @@ h1 {
 .waffle-background {
     background: url("../img/Вафля фон.png");
     height: 310px;
-    width: 1145px;
+    border-radius: 30px;
     background-repeat: no-repeat;
-    margin: 25px;
-    padding: 30px;
 }
 .features-description {
     line-height: 18px;
     font-family: "Roboto","Arial",sans-serif;
+}
+.main-information {
+    height: 310px;
+    width: 1145px;
+    margin: 25px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+.features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: baseline;
+    list-style: none;
+}
+.features-item {
+   width: 480px;
+   font-size: 16px;
+}
+.ice-recipe {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+}
+.about_blog {
+    background: url("../img/strawberry-bg.jpg");
+    height: 225px;
+    width: 560px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 0px;
+}
+.bg-post {
+    background: url("../img/svg/bg-post.svg");
+    height: 225px;
+    width: 560px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 0px;
+}
+.news_item {
+    padding: 20px 300px 5px 20px;
+    margin: 0;
+}
+.recipe {
+    padding: 20px 260px 85px 5px;
+    margin: 0px;
+    line-height: 22px;
+    font-size: 24px;
+}
+.send-info {
+ padding: 30px 40px;
+ margin: 0;
+ line-height: 22px;
+ font-size: 24px;
 }
 
 
