@@ -26,7 +26,13 @@ body {
 }
 .site-navigation a,
 .main-user-navigation a {
-color:black;
+color:rgb(255, 255, 255);
+}
+.site-navigation a:focus,
+.site-navigation a:hover {
+    border-radius: 30px;
+    background-color: #a8a8cf;
+    height: 40px;
 }
 .slide-btn {
     list-style: none;
@@ -91,6 +97,7 @@ margin-bottom: 425px;
   flex-direction: row;
   justify-content: flex-end;
   align-items:flex-end;
+  position: relative;
 }
 .main-user-navigation {
     margin: 0;
@@ -114,12 +121,37 @@ margin-bottom: 425px;
     padding: 0 20px;
     margin: 0 10px;
 }
+.login-link {
+    position: relative;
+    padding-left: 45px;
+}
+.login-link::before {
+   display: block;
+   top: 3px;
+   left: 16px;
+   position: absolute;
+   content: ""; 
+   width: 22px;
+   height: 20px;
+   background-image: url("../img/svg/entrance.svg");
+   background-repeat: no-repeat;
+   background-position: 0;
+}
 .header-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0 5px;
+    padding: 20px 30px 5px 0;
     margin: 0 5px; 
+    color: #fff;
+}
+.hours {
+    padding-top: 5px;
+    margin: 0px;
+    font-size: 16px;
+}
+.phone-number {
+    font-size: 24px;
 }
 h1 {
     margin-left: 400px;
@@ -130,6 +162,17 @@ h1 {
     text-decoration: none;
     position: relative;
 } 
+.button_main {
+    font-size: 32px;
+    font-weight: 700;
+    height: 65px;
+    width: 285px;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    color:#f4f4f4;
+    background-color: rgb(172, 73, 28);
+}
 .offers{
     padding: 5px;
     margin: 0px;
@@ -199,14 +242,13 @@ h1 {
 .features-list {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1100px;
+    align-items: stretch;
 }
 .features-item {
-   width: auto;
+   width: 400px;
    font-size: 16px;
+   flex-grow: 3;
 }
 .ice-recipe {
     margin: 0px;
