@@ -26,22 +26,13 @@ body {
 }
 .site-navigation a,
 .main-user-navigation a {
-color:rgb(255, 255, 255);
-}
-.site-navigation a:focus,
-.site-navigation a:hover {
-    border-radius: 30px;
-    background-color: #a8a8cf;
-    height: 40px;
+color:black;
 }
 .slide-btn {
     list-style: none;
 }
 .offers {
     list-style: none;
-}
-.main-header {
-    width: 1115px;
 }
 .button {
     height: 40px;
@@ -61,7 +52,7 @@ color:rgb(255, 255, 255);
 margin-bottom: 425px;
 }
 .main-navigation-wrapper .container {
-    width: 900px;
+    width: auto;
     margin-bottom: 420px;
     display: flex;
     justify-content: space-between;
@@ -97,7 +88,6 @@ margin-bottom: 425px;
   flex-direction: row;
   justify-content: flex-end;
   align-items:flex-end;
-  position: relative;
 }
 .main-user-navigation {
     margin: 0;
@@ -121,37 +111,12 @@ margin-bottom: 425px;
     padding: 0 20px;
     margin: 0 10px;
 }
-.login-link {
-    position: relative;
-    padding-left: 45px;
-}
-.login-link::before {
-   display: block;
-   top: 3px;
-   left: 16px;
-   position: absolute;
-   content: ""; 
-   width: 22px;
-   height: 20px;
-   background-image: url("../img/svg/entrance.svg");
-   background-repeat: no-repeat;
-   background-position: 0;
-}
 .header-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 20px 30px 5px 0;
+    padding: 0 5px;
     margin: 0 5px; 
-    color: #fff;
-}
-.hours {
-    padding-top: 5px;
-    margin: 0px;
-    font-size: 16px;
-}
-.phone-number {
-    font-size: 24px;
 }
 h1 {
     margin-left: 400px;
@@ -162,17 +127,6 @@ h1 {
     text-decoration: none;
     position: relative;
 } 
-.button_main {
-    font-size: 32px;
-    font-weight: 700;
-    height: 65px;
-    width: 285px;
-    border-radius: 30px;
-    text-align: center;
-    display: inline-block;
-    color:#f4f4f4;
-    background-color: rgb(172, 73, 28);
-}
 .offers{
     padding: 5px;
     margin: 0px;
@@ -181,27 +135,25 @@ h1 {
 }
 .offers-list {
     padding: 0px;
-    margin: 30px;
+    margin: 0px;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 .offers_item-rastberry {
     display: block;
-    width: 560px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0;
 }
 .offers_item-choco {
     display: block;
-    width: 560px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0;
 }
 .hit {
-    width: 1145px;
+    width: 100%;
    display: flex;
    justify-content: space-between;
    padding: 30px;
@@ -217,18 +169,10 @@ h1 {
 .img-choco {
     background: url("../img/chocolate-bg.jpg");
     margin-top: 25px;
-    margin: 25px;
     width: 560px;
     height: 230px;
     border-radius: 20px;
 }
-<<<<<<< HEAD
-.waffle-background {
-    background: url("../img/Вафля фон.png");
-    height: 310px;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-=======
 .main-information {
     position: relative;
     margin-bottom: 40px;
@@ -236,7 +180,6 @@ h1 {
     border-radius: 20px;
     background-repeat: no-repeat;
     margin: 40px 30px 40px 30px ;
->>>>>>> describe
 }
 .features-description {
     line-height: 18px;
@@ -265,91 +208,6 @@ h1 {
     line-height: 22px;
     font-weight: 200;
     color: #323232;
-}
-.main-information {
-    height: 310px;
-    width: 1145px;
-    margin: 25px;
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
-}
-.features-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-.features-item {
-   width: 400px;
-   font-size: 16px;
-   flex-grow: 3;
-}
-.ice-recipe {
-    margin: 0px;
-    list-style: none;
-    display: flex;
-    flex-grow: 2;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: normal;
-}
-.about_blog {
-    background: url("../img/strawberry-bg.jpg");
-    height: 225px;
-    width: 560px;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    margin: 30px;
-    padding: 0px;
-}
-.bg-post {
-    background: url("../img/svg/bg-post.svg");
-    height: 225px;
-    width: 560px;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    margin: 30px;
-    padding: 0px;
-}
-.news_item {
-    padding: 20px 300px 5px 20px;
-    margin: 0;
-}
-.recipe {
-    padding: 20px 260px 85px 5px;
-    margin: 0px;
-    line-height: 22px;
-    font-size: 24px;
-}
-.send-info {
- padding: 30px 40px;
- margin: 0;
- line-height: 22px;
- font-size: 24px;
-}
-.footer-social {
-    display: flex;
-    }
-.media {
-    list-style: none;
-    padding: 30px 130px 30px 30px;
-}
-.documents {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 360px;
-    max-height: 35px;
-    list-style: none;
-    margin: 30px;
-    padding: 30px 220px 30px 30px;
-}
-.footer-label{
-    width: 200px;
-    padding: 30px 30px 30px 30px;
 }
 
 
