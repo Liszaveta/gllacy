@@ -131,6 +131,7 @@ h1 {
     padding: 5px;
     margin: 0px;
     color: #fff;
+    width: 1145px;
 }
 .offers-list {
     padding: 0px;
@@ -172,18 +173,41 @@ h1 {
     height: 230px;
     border-radius: 20px;
 }
-.waffle-background {
-    background: url("../img/Вафля фон.png");
-    height: 310px;
-    width: 1145px;
+.main-information {
+    position: relative;
+    margin-bottom: 40px;
+    background-image: url("../img/Вафля фон.png");
+    border-radius: 20px;
     background-repeat: no-repeat;
-    margin: 25px;
-    padding: 30px;
+    margin: 40px 30px 40px 30px ;
 }
 .features-description {
     line-height: 18px;
     font-family: "Roboto","Arial",sans-serif;
+    width: 1115px;
+    line-height: 30px; 
+    font-size: 24px;
+    padding: 30px 112px 5px 20px;
+    margin: 0;
 }
-
+.features-list { 
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 0;
+}
+.feature-item {
+    position: relative;
+    width: 480px;
+    padding-right: 25px;
+    display: list-item;
+}
+.feature--text {
+    margin: 21px 0 0;
+    line-height: 22px;
+    font-weight: 200;
+    color: #323232;
+}
 
 
