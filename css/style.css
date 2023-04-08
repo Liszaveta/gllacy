@@ -26,7 +26,7 @@ body {
 }
 .site-navigation a,
 .main-user-navigation a {
-color:black;
+color:rgb(250, 250, 250);
 }
 .slide-btn {
     list-style: none;
@@ -175,6 +175,8 @@ h1 {
 }
 .main-information {
     position: relative;
+    width: 1145px;
+    height: 315px;
     margin-bottom: 40px;
     background-image: url("../img/Вафля фон.png");
     border-radius: 20px;
@@ -182,10 +184,9 @@ h1 {
     margin: 40px 30px 40px 30px ;
 }
 .features-description {
-    line-height: 18px;
+    line-height: 30px;
     font-family: "Roboto","Arial",sans-serif;
     width: 1115px;
-    line-height: 30px; 
     font-size: 24px;
     padding: 30px 112px 5px 20px;
     margin: 0;
@@ -203,10 +204,10 @@ h1 {
     padding-right: 25px;
     display: list-item;
 }
-.feature--text {
+.feature-text {
     margin: 21px 0 0;
     line-height: 22px;
-    font-weight: 200;
+    font-weight: 700;
     color: #323232;
 }
 
