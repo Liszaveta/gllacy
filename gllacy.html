@@ -27,9 +27,9 @@
             </nav>
             <nav class="user">
             <ul class="main-user-navigation">
-                <li class="test"> <a href="search"> <img src="img/svg/loupe.svg" width="20" height="20" alt="Поиск"></a></li>
-                <li class="login-link"> <a href="enterance">Вход</a></li>
-                <li class="test"> <a href="basket"> <img src="img/svg/basket.svg" width="20" height="20" alt="Корзина"></a></li>
+                <li> <a class="search-loupe" href="search"> <img src="img/svg/loupe.svg" width="20" height="20" alt="Поиск"></a></li>
+                <li> <a class="login-link" href="enterance">Вход</a></li>
+                <li> <a class="card-basket" href="basket"> <img src="img/svg/basket.svg" width="20" height="20" alt="Корзина"></a></li>
             </ul>
         <div class="header-bottom">
         <p class="hours">С 10 до 20, ежедневно</p>
@@ -64,14 +64,14 @@
         <ul class="offers-list">
             <div class="img">
         <li class="offers_item-rastberry">
-    <h2>Малинка даром!</h2>
+    <h2 class="rastberry">Малинка даром!</h2>
             <p>При покупке 2кг фруктового мороженного,добавим в ваш заказ банку малинового варенья бесплатно.</p>
     <a class="button" href="#">Хочу варьенье!</a>
 </div>
     </li>
     <div class="img-choco">
         <li class="offers_item-choco">
-    <h2>Шоколадки даром!</h2>
+    <h2 class="chocolate">Шоколадки даром!</h2>
             <p>При покупке 2кг пломбира,добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки бесплатно.</p>
             <a class="button" href="#">Хочу шоколадки!</a>
         </li>
@@ -116,7 +116,9 @@
             <p class="news_item">Новое в нашем блоге</p>
         <a href="#"><p class="recipe">10 способок сервировки фруктовых щербетов к столу</p></a>
         </li>
-    <!--<section class="send"-->
+        </ul>
+    </section>
+    <section class="send">
         <li class="mail">
             <div class="bg-post">
         <form class="suscribe" method="post">
@@ -124,7 +126,7 @@
                 что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно 
             </p>
             <input id="adress" type="text" name="email" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
+            <button class="button-send" type="submit">Отправить</button>
         </form>
             </div>
         </li>

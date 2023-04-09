@@ -34,15 +34,7 @@ color:rgb(250, 250, 250);
 .offers {
     list-style: none;
 }
-.button {
-    height: 40px;
-    border-radius: 30px;
-    font: inherit;
-    text-align: center;
-    color:#f4f4f4;
-    background-color: rgb(172, 73, 28);
-    vertical-align: middle;
-}
+
 .button :hover,
 .button :focus,
 .button :active {
@@ -95,28 +87,80 @@ margin-bottom: 425px;
     display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  justify-content: space-between;
+  width: 265px;
+}
+.main-user-navigation a:hover,
+.main-user-navigation a:focus { background-color: #d7e3e5;
+    border-radius: 30px;
 }
 .user {
     width: 270px;
-    margin: 25px;
+    margin: 23px;
     padding: 0;
     display: flex;
     flex-direction: column;
     list-style: none;
 }
-.test {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0 20px;
-    margin: 0 10px;
+.login-link {
+    position: relative;
+    padding: 8px 16px 8px 44px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 50px;
+}
+.login-link::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/svg/entrance.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+.search-loupe {
+    padding: 0;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 50px;
+}
+.card-basket {
+    padding: 8px 16px 8px 35px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 50px;
+    width: 110px;
+    height: 33px;
 }
 .header-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0 5px;
-    margin: 0 5px; 
+    padding: 0px;
+    margin: 10px; 
+    color:rgb(251, 247, 247);
+}
+.hours {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 400;
+    line-height: 16px;
+    font-size: 14px;
+    margin-bottom: -3px;
+}
+.phone-number {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 600;
+    line-height: 24px;
+    font-size: 22px;
 }
 h1 {
     margin-left: 400px;
@@ -127,6 +171,23 @@ h1 {
     text-decoration: none;
     position: relative;
 } 
+.button_main {
+    font-size: 32px;
+    font-weight: 700;
+    height: 65px;
+    width: 285px;
+    border-radius: 30px;
+    text-align: center;
+    display: inline-block;
+    color:#f4f4f4;
+    background-color: rgb(172, 73, 28);
+}
+.rastberry .chocolate{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 400px;
+    line-height: 41px;
+    font-size: 35px;  
+}
 .offers{
     padding: 5px;
     margin: 0px;
@@ -173,6 +234,22 @@ h1 {
     height: 230px;
     border-radius: 20px;
 }
+.button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300px;
+    height: 45px;
+    width: 165px;
+    text-decoration: none;
+    border-radius: 30px;
+    font: inherit;
+    text-align: center;
+    color:#f4f4f4;
+    background-color: rgb(172, 73, 28);
+}
+.hit {
+    width: 1146px;
+}
 .main-information {
     position: relative;
     width: 1145px;
@@ -206,9 +283,49 @@ h1 {
 }
 .feature-text {
     margin: 21px 0 0;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     color: #323232;
 }
-
-
+.new {
+    position: relative;
+    width: 560px;
+    height: 220px;
+    margin-bottom: 40px;
+    background-image: url("..//img/strawberry-bg.jpg");
+    border-radius: 20px;
+    margin: 30px 40px;
+}
+.news_item {
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.ice-recipe {
+    list-style: none;
+}
+.recipe {
+    font-family: inherit;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.send {
+    position: relative;
+    width: 560px;
+    height: 220px;
+    margin-bottom: 40px;
+    background-image: url("..//img/svg/bg-post.svg");
+    border-radius: 20px;
+    margin: 30px 40px;
+}
+.bg-post{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    align-items: stretch;
+}
