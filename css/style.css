@@ -288,44 +288,82 @@ h1 {
     font-weight: 700;
     color: #323232;
 }
+
+.news_item {
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 27px 380px 15px 27px;
+}
 .new {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 30px 40px 30px;
+}
+.ice-recipe {
+    list-style: none;
     width: 560px;
     height: 220px;
     margin-bottom: 40px;
     background-image: url("..//img/strawberry-bg.jpg");
     border-radius: 20px;
-    margin: 30px 40px;
-}
-.news_item {
-    width: 540px;
-    font-size: 16px;
-    line-height: 22px;
-}
-.ice-recipe {
-    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .recipe {
     font-family: inherit;
-    font-weight: 500px;
     font-size: 24px;
     line-height: 30px;
+    width: 290px;
+    margin: 15px 263px 25px 22px
 }
-.send {
-    position: relative;
+.mail {
+    list-style: none;
+    margin: 0px 30px 40px 27px;
     width: 560px;
     height: 220px;
-    margin-bottom: 40px;
     background-image: url("..//img/svg/bg-post.svg");
     border-radius: 20px;
-    margin: 30px 40px;
 }
-.bg-post{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1100px;
-    align-items: stretch;
+.cover {
+    width: 550px;
+    height: 210px;
+    margin: 5px 5px 5px 5px;
+    background-color: #f8f7f4;
+    background-size: cover;
+    border-radius: 15px;
+}
+.send-info {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    color:#4a4949;
+    margin: 0;
+    width: 510px;
+    padding: 40px 25px 40px 25px;
+}
+.adress {
+    padding: 12px;
+    margin-right: 12px;
+    margin-left: 25px;
+    width: 360px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+}
+.button-send {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 120px;
+    height: 45px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300px;
+    text-decoration: none;
+    border-radius: 30px;
+    font: inherit;
+    text-align: center;
+    color:#f4f4f4;
+    background-color: rgb(172, 73, 28);
 }
