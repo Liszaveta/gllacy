@@ -1,7 +1,5 @@
 .site-wrapper {
-    display: block;
-    min-width: 900px;
-    margin: auto;
+    
 }
 body {
         margin: 0;
@@ -366,4 +364,65 @@ h1 {
     text-align: center;
     color:#f4f4f4;
     background-color: rgb(172, 73, 28);
+}
+.main-footer .wrapper {
+    display: flex;   
+}
+.footer-social {
+    width: 195px;
+    margin-right: 200px;
+}
+.documents {
+    width: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+}
+.documents-right {
+    width: 165px;
+    padding: 0;
+    margin-right: 230px;
+    display: flex;
+    height: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+}
+.info{
+    color: #fff;
+}
+.footer-label {
+    width: 190px;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color:#fff;
+    font-weight: 100;
+}
+.social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+.footer-social ul {
+    display: flex;
+    list-style: none;
+    width: 195px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.social-button:hover,
+.social-button:focus {
+    background-color: #d7e3e5;
+}
+.social-button:hover path,
+.social-button:focus path {
+ fill:rgb(87, 113, 113);
 }
