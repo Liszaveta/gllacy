@@ -311,12 +311,7 @@ h1 {
     color:#f4f4f4;
     background-color: rgb(172, 73, 28);
 }
-.rastberry .chocolate{
-    font-family: "Roboto","Arial",sans-serif;
-    font-size: 400px;
-    line-height: 41px;
-    font-size: 35px;  
-}
+
 .offers{
     color: #fff;
     width: auto;
@@ -324,6 +319,7 @@ h1 {
     
 }
 .offers-list {
+    display: flex;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -331,23 +327,18 @@ h1 {
     justify-content: space-between;
 }
 .offers_item-rastberry {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px 20px;
     margin: 0;
 }
 .offers_item-choco {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px 20px;
     margin: 0;
 }
-.hit {
-    width: 100%;
-   display: flex;
-   justify-content: space-between;
-   padding: 30px;
-}
+
 .img {
     background: url("../img/raspberry-bg.jpg");
     margin: 25px 30px 25px 25px;
@@ -363,35 +354,62 @@ h1 {
     height: 230px;
     border-radius: 20px;
 }
+.rastberry .chocolate{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 400px;
+    line-height: 41px;
+    font-size: 35px;  
+}
+.paragraph {
+    line-height: 22px;
+    font-size: 18px; 
+    margin-top: 0;
+    margin-bottom: 43px;
+}
 .button {
     display: inline-block;
+    padding: 22px 44px;
     font-size: 32px;
     font-weight: 200px;
-    height: 60px;
     width: 275px;
     text-decoration: none;
     border-radius: 50px;
     text-align: center;
     color:#f4f4f4;
     background-color: rgb(172, 73, 28);
-}
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    }
 .button-offer {
-    display: inline-block;
+    align-self: flex-end;
+    vertical-align: middle;
+    padding: 14px 22px 0px 22px;
     font-size: 18px;
     font-weight: 100px;
-    height: 45px;
+    height: 40px;
     width: 165px;
     text-decoration: none;
     border-radius: 30px;
     text-align: center;
     color:#f4f4f4;
     background-color: rgb(172, 73, 28);
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .hit {
-    width: 1146px;
+    width: 100%;
+    position: relative;
+    }
+.variety {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.catalog_item {
+
 }
 .main-information {
-    position: relative;
     width: 1145px;
     height: 315px;
     margin-bottom: 40px;
@@ -508,6 +526,8 @@ h1 {
     text-align: center;
     color:#f4f4f4;
     background-color: rgb(172, 73, 28);
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .map {
    
@@ -515,6 +535,7 @@ h1 {
     max-width: 100%;
     height: 430px;
     background: url("../img/map.png") no-repeat center;
+    margin-bottom: 20px;
 }
 .map-wrapper {
     width: 1200px;
@@ -530,8 +551,13 @@ h1 {
     right: 100px;
     padding: 30px 25px
 }
-.main-footer .wrapper {
-    display: flex;   
+.main-footer {
+    display: flex; 
+}
+.wrapper {
+    display: flex;
+    width: 1146px;
+    margin: 0;
 }
 .footer-social {
     width: 195px;
