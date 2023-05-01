@@ -481,23 +481,74 @@ h1 {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    width: 1100px;
+    justify-content: space-between;
+    width: auto;
     margin: 0;
+    padding-left: 70px;
+    padding-right: 33px;
 }
 .feature-item {
     position: relative;
     width: 480px;
-    padding-right: 25px;
+    
     display: list-item;
 }
 .feature-text {
+    position: relative;
     margin: 21px 0 0;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     color: #323232;
 }
-
+.feature-text1::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -57px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-image: url("../img/Мороженко.png");
+    background-repeat: no-repeat;
+}
+.feature-text2::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -57px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-image: url("../img/Корова.png");
+    background-repeat: no-repeat;
+}
+.feature-text3::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -57px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-image: url("../img/Листик.png");
+    background-repeat: no-repeat;
+}
+.feature-text4::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -57px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-image: url("../img/Градусник.png");
+    background-repeat: no-repeat;
+}
 .news_item {
     width: 540px;
     font-size: 16px;
@@ -581,26 +632,58 @@ h1 {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .map {
-   
+    width: 1200px;
     position: relative;
-    max-width: 100%;
     height: 430px;
     background: url("../img/map.png") no-repeat center;
     margin-bottom: 20px;
 }
 .map-wrapper {
-    width: 1200px;
+    width: auto;
 }
 .recall {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 240px;
     background-color: #ffff;
     z-index: 1;
     border-radius: 20px;
-    top: 63px;
-    right: 100px;
-    padding: 30px 25px
+    top: 60px;
+    right: 25px;
+    padding: 30px 25px;
+    margin: 0;
+}
+.button-form {
+    height: 45px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 300px;
+    text-decoration: none;
+    border-radius: 30px;
+    font: inherit;
+    text-align: center;
+    color:#f4f4f4;
+    background-color: rgb(172, 73, 28);
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+.main-office, .orders, .hours-delivery {
+    margin: 0;
+    width: 156px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323232;
+}
+.orders {
+    padding-top: 25px;
+    margin: 0;
+}
+.num {
+    margin: 0;
+}
+.hours-delivery {
+    margin-bottom: 25px;
 }
 .main-footer {
     display: flex; 
