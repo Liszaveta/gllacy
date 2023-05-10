@@ -195,24 +195,18 @@ color:rgb(250, 250, 250);
     padding: 0 20px;
     margin: 0 5px;
 }
-.user-navigation {
-    display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items:flex-end;
-}
 .main-user-navigation {
-    margin: 0;
-    padding: 0;
     display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  justify-content: space-between;
   width: 265px;
+  margin: 0;
+  padding: 0;
 }
 .main-user-navigation a:hover,
 .main-user-navigation a:focus { background-color: #d7e3e5;
     border-radius: 30px;
+
 }
 .user {
     width: auto;
@@ -244,7 +238,6 @@ color:rgb(250, 250, 250);
     display: block;
     content: "";
     position: absolute;
-    top: 3px;
     left: 16px;
     width: 20px;
     height: 20px;
@@ -253,22 +246,24 @@ color:rgb(250, 250, 250);
     background-position: 0;
 }
 .search-loupe {
-    padding: 0;
-    margin-left: 12px;
-    margin-bottom: 10px;
-    line-height: 25px;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 50px;
-}
-.card-basket {
-    padding: 8px 16px 8px 35px;
+    position: relative;
+    padding: 12px 10px 5px 10px;
     margin-left: 12px;
     margin-bottom: 10px;
     line-height: 16px;
     background-color: rgba(255,255,255,.2);
     border-radius: 50px;
-    width: 110px;
-    height: 33px;
+}
+.card-basket {
+    position: relative;
+    padding: 12px 25px 5px 25px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 50px;
+    width: auto;
+    height: auto;
 }
 .header-bottom {
     display: flex;
@@ -690,8 +685,10 @@ h1 {
 }
 .wrapper {
     display: flex;
-    width: 1146px;
-    margin: 0;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 18px 0 30px;
 }
 .footer-social {
     width: 195px;
@@ -705,6 +702,10 @@ h1 {
     font-size: 13px;
     line-height: 18px;
 }
+.documents a,
+.documents-right a {
+    color: #ffff;
+}
 .documents-right {
     width: 165px;
     padding: 0;
@@ -716,8 +717,22 @@ h1 {
     font-size: 13px;
     line-height: 18px;
 }
-.info{
+.info-providers{
+    display: block;
+    position: relative;
     color: #fff;
+}
+.info-providers::before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    right: 10px;
+    width: 15px;
+    height: 13px;
+    content: "";
+    background-image: url("../img/Сердце.png");
+    background-repeat: no-repeat;
 }
 .footer-label {
     width: 190px;
