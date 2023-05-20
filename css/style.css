@@ -156,13 +156,13 @@ color:rgb(250, 250, 250);
 }
 .slide-button {
     list-style: none;
-    width: auto;
+    width: 278px;
     align-self: flex-end;
     vertical-align: top;
     padding: 5px 20px;
     margin-top: 0;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 54px;
     height: 63px;
     text-decoration: none;
     border: 0px;
@@ -261,6 +261,7 @@ color:rgb(250, 250, 250);
     content: "";
     position: absolute;
     left: 16px;
+    top: 7px;
     width: 20px;
     height: 20px;
     background-image: url("../img/svg/entrance.svg");
@@ -269,20 +270,32 @@ color:rgb(250, 250, 250);
 }
 .modal {
     color: #000;
-    position: absolute;
+    position: fixed;
     background-color: #f4f4f4;
     background-position: 0 0;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
 }
 .modal-login {
     position: fixed;
-    width: 240px;
+    width:240px;
     height: 175px;
     padding: 20px;
     top: 60px;
     left: 200px;
     border-radius: 5px;
 }
+
 .button-list {
     display:flex;
     height: 45px;
@@ -393,17 +406,7 @@ h1 {
     text-decoration: none;
     position: relative;
 } 
-.button_main {
-    font-size: 32px;
-    font-weight: 700;
-    height: 65px;
-    width: 285px;
-    border-radius: 30px;
-    text-align: center;
-    display: inline-block;
-    color:#f4f4f4;
-    background-color: rgb(172, 73, 28);
-}
+
 
 .offers{
     color: #fff;
@@ -454,6 +457,8 @@ h1 {
     font-size: 35px;  
 }
 .paragraph {
+    width: auto;
+    max-height: 44px;
     line-height: 22px;
     font-size: 18px; 
     margin-top: 0;
@@ -465,6 +470,7 @@ h1 {
     vertical-align: middle;
     padding: 14px 22px 0px 22px;
     font-size: 18px;
+    line-height: 24px;
     font-weight: 100px;
     height: 40px;
     width: 165px;
