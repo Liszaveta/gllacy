@@ -95,7 +95,7 @@ body {
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 .slider-controls{
-    position: absolute;
+  position: absolute;
   bottom: 25px;
   left: 0;
   z-index: 20;
@@ -150,10 +150,15 @@ body {
 .main-user-navigation {
     list-style: none;
 }
-.site-navigation a,
+
 .main-user-navigation a {
 color:rgb(250, 250, 250);
 }
+.site-navigation a {
+    color:rgb(250, 250, 250);
+    padding: 0;
+}
+
 .slide-button {
     list-style: none;
     width: 278px;
@@ -204,18 +209,21 @@ color:rgb(250, 250, 250);
   justify-content: flex-start; 
 }
 .site-navigation {
-    max-width: 100%;
+    width: auto;
     margin: 0;
     padding: 25px;
     display: flex;
     flex-direction: row;
     list-style: none;
 }
+
 .list {
     display: flex;
     flex-direction: row;
     padding: 0 20px;
     margin: 0 5px;
+    max-height: 35px;
+    line-height: 24px;
 }
 .main-user-navigation {
     display: flex;
@@ -227,9 +235,17 @@ color:rgb(250, 250, 250);
 }
 .main-user-navigation a:hover,
 .main-user-navigation a:focus { background-color: #d7e3e5;
-    border-radius: 30px;
+    border-radius: 20px;
 
 }
+.site-navigation a:hover { 
+    position: relative;
+    background-color: #e9f0f1;
+    color:#000;
+    border-radius: 20px;
+    padding: 4px;
+}
+
 .user {
     width: auto;
     margin: 23px;
@@ -275,7 +291,7 @@ color:rgb(250, 250, 250);
     background-position: 0 0;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
     z-index: 2;
-    display: none;
+    /*display: none;*/
 }
 .modal-overlay {
     position: fixed;
@@ -301,6 +317,7 @@ color:rgb(250, 250, 250);
     height: 45px;
     justify-content: space-between;
 }
+
 .button-enter {
     align-self: flex-end;
     vertical-align: middle;
@@ -355,6 +372,46 @@ color:rgb(250, 250, 250);
 }
 .data {
     margin: 0;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: initial;
+}
+
+.modal-main-menu {
+    position: absolute;
+    list-style: none;
+    width: 105px;
+    height: auto;
+    padding: 10px 20px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: initial;
+    border-radius: 5px;
+}
+.menu-item-new {
+    font-weight: 700;
+    border-radius: 8px 8px 0 0;
+    padding-bottom: 10px;
+}
+.underline {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    left: 5px;
+    height: 1px;
+    opacity: 0.5;
+    margin: 0; 
+    border: 0;
+    background: grey;
+}
+.underline::after {
+    content: "";
+    position: absolute;
+    background: grey;
+}
+.menu-item :focus,
+.menu-item :hover {
+ color: #f6b7a6;
 }
 .search-loupe {
     position: relative;
@@ -660,6 +717,8 @@ h1 {
 }
 .recipe {
     font-family: inherit;
+    color: black;
+    text-decoration: underline black;
     font-size: 24px;
     line-height: 30px;
     width: 290px;
