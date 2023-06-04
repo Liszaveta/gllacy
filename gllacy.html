@@ -240,6 +240,7 @@
     </div>
         </footer>
         <div class="modal-overlay"></div>
+        
         <section class="modal modal-login">
             <form class="login-form" action="file:///C:/Users/liszp/Desktop/project/gllacy.html" method="post">
                 <p class="data">
@@ -259,7 +260,15 @@
     </div>
             </form>
         </section>
-        <div class="modal modal-catalog">
+        
+    <section class="modal modal-search">
+        <form class="search-form" action="file:///C:/Users/liszp/Desktop/project/gllacy.html" method="post">
+            <p class="find">
+                <input class="what-to-find" id="search-item" type="text" name="srch" placeholder="Что ищем?">
+            </p>
+        </form>
+    </section>
+    <section class="modal modal-catalog modal-show">
         <ul class="main-menu">
                 <li class="menu-item-new"><a class="menu-item-link" href="#">Новинки</a></li>
                 <p class="underline"></p>
@@ -268,14 +277,7 @@
                 <li class="menu-item"><a class="menu-item-link" href="#">Фруктовый лед</a></li>
                 <li class="menu-item"><a class="menu-item-link" href="#">Мелорин</a></li>
         </ul>
-    </div>
-    <section class="modal modal-search">
-        <form class="search-form" action="file:///C:/Users/liszp/Desktop/project/gllacy.html" method="post">
-            <p class="find">
-                <input class="what-to-find" id="search-item" type="text" name="srch" placeholder="Что ищем?">
-            </p>
-        </form>
-    </section>
+        </section>
     <section class="modal modal-feedback">
         <form class="answer-form" action="file:///C:/Users/liszp/Desktop/project/gllacy.html" method="post">
             <p class="text-back">Мы обязательно вам ответим!</p>
@@ -295,15 +297,23 @@
         </form>
     </section>
     <script>
-   var popup = document.querrySelectorall(".modal");
-    modal.addEventListener("click", function (evt) {
+       var link = document.querySelector("catalog");
+   var popup = document.querySelector(".modal-catalog");
+   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     });
-  var close = popup.querrySelector("modal-close");
-    modal-close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show")
+    var enter = document.querySelector(".login-link");
+    var pop = document.querySelector(".modal-login");
+    var close = pop.querySelector(".modal-close");
+    enter.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        pop.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        pop.classList.remove("modal-show");
     });
     </script>
 </body>

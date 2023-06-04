@@ -795,7 +795,7 @@ h1 {
     background-position: 0 0;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
     z-index: 2;
-    display: none;
+    /*display: none;*/
 }
 .modal-show {
     display: block;
@@ -814,6 +814,7 @@ h1 {
     width:240px;
     height: 175px;
     padding: 20px;
+    margin-left: 880px;
     top: 60px;
     left: 200px;
     border-radius: 5px;
@@ -884,11 +885,13 @@ h1 {
     font-weight: initial;
 }
 .modal-catalog {
-    position: absolute;
+    position: static;
     width: 105px; 
     height: 170px;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-left: 185px;
+    display: none;
 }
 .main-menu {
     list-style: none;
@@ -941,7 +944,7 @@ width: 345px;
 height: 45px;
 padding: 20px 15px;
 top: 60px;
-left: 600px;
+left: 950px;
 border-radius: 5px;
 }
 .find {
@@ -963,8 +966,9 @@ position: absolute;
 width: auto;
 height: 425px;
 padding: 20px 25px;
-top: 335px;
-left: 365px;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 600px;
 border-radius: 5px;
 }
 .modal-close {
