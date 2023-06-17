@@ -47,13 +47,14 @@
     <div class="container_index">
     <section class="slider">
         <div class="slider-controls">
-            <label for="product-1"></label>
+            <label for="product-3"></label>
             <label for="product-2"></label>
-            <label for="product-3"></label> </div>
+            <label for="product-1"></label>
+         </div>
     <ul class="slides-switches">
         <li class="slider-item slide" id="slide1">
             <h3 class="slide-title">
-                Крем-брюле и пломбир с малновым джемом
+                Крем-брюле и пломбир с малиновым джемом
             </h3>
             <a class="slide-button button" href="#"> Давайте оба!</a>
         </li>
@@ -181,7 +182,7 @@
                 <p class="orders"> Для заказов по телефону:</p>
                 <p class="num"> 8 812 450-25-25 </p>
                 <p class="hours-delivery"> (с 10 до 20 ежедневно)</p>
-                <button class="button-form" type="submit">Форма обратной связи</button>
+                <button class="button-form button" type="submit">Форма обратной связи</button>
             </div>
         </div>
         </section>
@@ -268,7 +269,7 @@
             </p>
         </form>
     </section>
-    <section class="modal modal-catalog modal-show">
+    <section class="modal modal-catalog">
         <ul class="main-menu">
                 <li class="menu-item-new"><a class="menu-item-link" href="#">Новинки</a></li>
                 <p class="underline"></p>
@@ -278,7 +279,8 @@
                 <li class="menu-item"><a class="menu-item-link" href="#">Мелорин</a></li>
         </ul>
         </section>
-    <section class="modal modal-feedback">
+       
+    <section class="modal-feedback modal modal-show">
         <form class="answer-form" action="file:///C:/Users/liszp/Desktop/project/gllacy.html" method="post">
             <p class="text-back">Мы обязательно вам ответим!</p>
             <p class="name-user">
@@ -297,24 +299,29 @@
         </form>
     </section>
     <script>
-       var link = document.querySelector("catalog");
-   var popup = document.querySelector(".modal-catalog");
-   link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    });
-    var enter = document.querySelector(".login-link");
-    var pop = document.querySelector(".modal-login");
-    var close = pop.querySelector(".modal-close");
+    var enter = document.querySelector(".button-form");
+    var popup = document.querySelector(".modal-feedback");
+    var close = popup.querySelector(".modal-close");
+    var form = popup.querySelector("form");
+    var uname = document.getElementById('user-name');
+    var madress = document.getElementById('user-email-adress');
+
     enter.addEventListener("click", function (evt) {
         evt.preventDefault();
-        pop.classList.add("modal-show");
+        popup.classList.add("modal-show");
+        uname.focus();
     });
 
     close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        pop.classList.remove("modal-show");
+        popup.classList.remove("modal-show");
     });
+    form.addEventListener("submit", function (evt) {
+        if (!uname.value || !madress.value) {
+        evt.preventDefault();
+        console.log("Введите логин и пароль");
+        } 
+    })
     </script>
 </body>
 </html>
